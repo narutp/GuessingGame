@@ -43,19 +43,17 @@ public class GuessingGame {
 	 * @return a true or false answer including set the hint message
 	 */
 	public boolean guess(int number) {
+		this.count++;
 		if(number == this.secret) {
 			setHint("Correct. The secret is " + secret);
-			this.count++;
 			return true;
 		}
 		if(number > secret) {
 			setHint("Sorry, your guess is too big");
-			this.count++;
 			return false;
 		}
 		else {
 			setHint("Sorry, your guess is too small");
-			this.count++;
 			return false;
 		}
 		
