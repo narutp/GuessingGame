@@ -1,5 +1,5 @@
 # GuessingGame
-By Narut Poovorakit
+By Narut Poovorakit 5710546283
 
 GameConsole   - Console that connect between the game and the user. Show the UI to the user. 
 GuessingGame  - A game algorithm that calculate all of the stuff.
