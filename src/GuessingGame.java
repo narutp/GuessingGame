@@ -95,6 +95,10 @@ public class GuessingGame {
 		return rand.nextInt(limit) +1;
 	}
 	
+	/**
+	 * 
+	 * @return count is a number of how many guess that user guess until it correct
+	 */
 	public int getCount() {
 		return this.count;
 	}
