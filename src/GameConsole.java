@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 /**
  * GameConsole is a class that act as a UI of the program.
+ * 
  * @author Narut Poovorakit
  *
  */
 public class GameConsole {
-	
+
 	/**
-	 * A method play is to run the process of the game or initial the game 
-	 * @param game is a GuessingGame object that contain the algorithm of the game.
+	 * A method play is to run the process of the game or initial the game
+	 * 
+	 * @param game
+	 *            is a GuessingGame object that contain the algorithm of the
+	 *            game.
 	 * @return a secret number
 	 */
 	public int play(GuessingGame game) {
@@ -19,7 +23,7 @@ public class GameConsole {
 		System.out.println(title);
 		System.out.println(game.getHint());
 		System.out.println(temp);
-		
+
 		Scanner scanner = new Scanner(System.in);
 		int input = 0;
 		while (!check) {
@@ -33,11 +37,10 @@ public class GameConsole {
 			System.out.println(hint);
 			if (!check)
 				System.out.println(temp);
-			
+
 		}
 		System.out.println("You used " + game.getCount() + " guesses.");
 		return input;
-		
-		
+
 	}
 }
